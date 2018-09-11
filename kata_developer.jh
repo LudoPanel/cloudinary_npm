@@ -1,0 +1,17 @@
+
+entity Developer {
+	firstName String required,
+	lastName String required
+}
+
+entity Language {
+	name String required
+}
+
+relationship OneToMany {
+    Developer{langages} to Language
+}
+
+dto * with mapstruct
+service * with serviceImpl
+
